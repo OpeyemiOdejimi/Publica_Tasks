@@ -5,3 +5,7 @@
 #   * Show remaining seats after each booking.
 
 
+set_of_numbers = set([i for i in range(1, 51)])
+seat_number = int(input("Choose seat number of choice: "))
+set_of_numbers.remove(seat_number)
+print(set_of_numbers)
