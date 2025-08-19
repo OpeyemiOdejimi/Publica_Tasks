@@ -5,7 +5,10 @@ Task 3: Online Store Cart Calculation
 * Use assignment operators (+=) to add the price of some items into cart_total.
 * Print the list of items and the total price using an f-string like this       
 '''
-list_of_items = ("Book", "Pen", "Bag")
-list_of_prices = ("500", "100", "2000")
+items = ["Book", "Pen", "Bag"]
+prices = [500, 100, 2000]
 cart_total = 0
-
+cart_total += prices[0]
+cart_total += prices[1]
+print(f"Items: {items}")
+print(f"Total Price: N{cart_total}")
