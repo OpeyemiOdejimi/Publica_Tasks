@@ -1,0 +1,19 @@
+# * Word Analyzer
+# *Check if it is all uppercase, all lowercase, or title case.
+
+
+name = "Opeyemi Odejimi"
+while True:
+    capital = input("Enter your full name: ")
+    if capital.lower() == name:
+        print("\nYes!")
+    elif capital.upper() == name:
+        print("\nNice!!!")
+    elif capital.title() == name:
+        print("\nAlright!!!")
+        break
+    else:
+        print("\nWrong!!!")
+
+
+print(f"The length of the name is {len(name)}")
