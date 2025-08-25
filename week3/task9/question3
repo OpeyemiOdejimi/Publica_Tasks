@@ -4,12 +4,12 @@
 
 name = "Opeyemi Odejimi"
 while True:
-    capital = input("Enter your full name: ")
-    if capital.lower() == name:
+    name = input("Enter your full name: ")
+    if name.lower() == name:
         print("\nYes!")
-    elif capital.upper() == name:
+    elif name.upper() == name:
         print("\nNice!!!")
-    elif capital.title() == name:
+    elif name.title() == name:
         print("\nAlright!!!")
         break
     else:
