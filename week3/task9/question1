@@ -1,0 +1,51 @@
+# Pidgin USSD recharge bot
+print("Welcome ooo! Wetin you dey look for?")
+print("Dial *110# to begin")
+print("\nAbeg, pick one option:")
+print("1. Recharge (Buy Airtime)")
+print("2. Data (I want browse small)")
+print("3. Exit (Bye for now)")
+
+choice = input("Enter wetin you want: ")
+
+if choice == "1":
+    print("\nYou don select Recharge! God bless you.")
+    print("How much you want to buy?")
+    print("Available: #100, #200, #300, #400, #500, #1000")
+    
+    card_amount = input("Type am well: ")
+    
+    if card_amount in ["100", "200", "300", "400", "500", "1000"]:
+        print(f"E don happen! You just buy #${card_amount} recharge card.")
+        print("Airtime don land! No be dream.")
+    else:
+        print("Abeg! That one no be among the list. Try again small.")
+
+elif choice == "2":
+    print("\nData! Data! Who get data?")
+    print("Which plan you fit afford? See wetin we get:")
+    print("1. 500MB - #500 (Small small for night)")
+    print("2. 1.5GB - #750 (For WhatsApp and TikTok)")
+    print("3. 3GB - #2500 (One week of survival)")
+    print("4. 10GB - #5000 (Heavy boy! Full Netflix!)")
+    
+    selected_plan = input("Pick your choice: ")
+    
+    if selected_plan == "1":
+        print("Oya! 500MB don enter. Go and browse small.")
+    elif selected_plan == "2":
+        print("Sharp sharp! 1.5GB for #750 don comot.")
+    elif selected_plan == "3":
+        print("Na wa! 3GB don reach. No waste am.")
+    elif selected_plan == "4":
+        print("Big boy! 10GB don land. Enjoy your weekend.")
+    else:
+        print("Ehn! That number no dey here. Try again.")
+
+elif choice == "3":
+    print("\nYou don exit. Thanks for wasting our time sha.")
+    print("Bye! Come back when you get money.")
+
+else:
+    print("Abeg! That no be correct option.")
+    print("Just press 1, 2, or 3. No be rocket science!")

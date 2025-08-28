@@ -17,5 +17,3 @@ information = {name: num for name, num in zip(names, phone_num)}
 #Ask the users for a new name plus get number
 username = input("Enter a name: ")
 print(information.get(username))
-
-

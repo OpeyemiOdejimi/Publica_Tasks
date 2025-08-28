@@ -1,0 +1,56 @@
+# =============================================
+#   Nigerian Currency Converter (Advanced)
+#   Converts NGN to USD or GBP using market rates
+# =============================================
+
+print("=" * 60)
+print("           NIGERIAN CURRENCY CONVERTER")
+print("     Convert Naira to US Dollars or British Pounds")
+print("=" * 60)
+
+# Display available options
+print("Choose the currency you want to convert to:")
+print("1. US Dollars (USD)")
+print("2. British Pounds (GBP)")
+
+# Get user input
+choice = input("\nEnter your choice (1 or 2): ").strip()
+
+# Set exchange rates (market rates in NGN per foreign currency)
+exchange_rate_usd = 1500.00
+exchange_rate_gbp = 1900.00
+
+try:
+    amount_naira = float(input("Enter the amount in Nigerian Naira (NGN): "))
+
+    print("\n" + "-" * 60)
+
+    if choice == "1":
+        # Convert to US Dollars
+        usd_amount = amount_naira / exchange_rate_usd
+        print(f"{'CURRENCY CONVERSION: NGN → USD':^50}")
+        print("-" * 60)
+        print(f"Amount in Naira:           ₦{amount_naira:,.2f}")
+        print(f"Exchange Rate:             ₦{exchange_rate_usd:,.2f} per $1")
+        print(f"Equivalent in US Dollars:  ${usd_amount:,.2f}")
+        print("-" * 60)
+        print("Note: Based on current parallel market exchange rate.")
+
+    elif choice == "2":
+        # Convert to British Pounds
+        gbp_amount = amount_naira / exchange_rate_gbp
+        print(f"{'CURRENCY CONVERSION: NGN → GBP':^50}")
+        print("-" * 60)
+        print(f"Amount in Naira:            ₦{amount_naira:,.2f}")
+        print(f"Exchange Rate:              ₦{exchange_rate_gbp:,.2f} per £1")
+        print(f"Equivalent in British Pounds: £{gbp_amount:,.2f}")
+        print("-" * 60)
+        print("Note: Exchange rate is subject to market fluctuations.")
+
+    else:
+        print("Invalid choice. Please enter 1 for USD or 2 for GBP.")
+
+except ValueError:
+    print("Error: The amount you entered is not valid. Please enter a numerical value.")
+
+print("\nThank you for using the Nigerian Currency Converter.")
