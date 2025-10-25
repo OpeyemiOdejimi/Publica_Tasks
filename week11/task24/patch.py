@@ -7,6 +7,8 @@ import os
 
 load_dotenv()
 
+# Assignment to create a patch and delete method in FastAPI
+
 # creating instance for fastapi
 app = FastAPI(title= 'Second FastAPI App', version= '1.0.0')
 
